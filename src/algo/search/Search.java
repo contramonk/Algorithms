@@ -10,4 +10,17 @@ public class Search {
 		}
 		return -1;
 	}
+	
+	public static int binarySearch(int[] array, int number) {
+		int p = 0;
+		int r = array.length - 1;
+		
+		while(p <= r) {
+			int q = (p + r) / 2;
+			if(number == array[q]) { return q; }
+			if(number > array[q]) { p = q + 1; }
+			if(number < array[q]) { r = q - 1; }
+		}
+		return -1;
+	}
 }
