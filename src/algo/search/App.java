@@ -18,5 +18,14 @@ public class App {
 		System.out.println(index);
 		index = Search.binarySearch(bsArray, 99);
 		System.out.println(index);
+		
+		// Recursive Binary Search Test
+		System.out.println("**************Test recursive binarySearch***************");
+		index = Search.recursiveLinearSearch(lsArray, 5, 78);
+		System.out.println(index);
+		index = Search.recursiveLinearSearch(lsArray, 5, 122);
+		System.out.println(index);
 	}
+	
+	
 }
