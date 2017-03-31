@@ -19,11 +19,21 @@ public class App {
 		index = Search.binarySearch(bsArray, 99);
 		System.out.println(index);
 		
-		// Recursive Binary Search Test
-		System.out.println("**************Test recursive binarySearch***************");
+		// Recursive Linear Search Test
+		System.out.println("**************Test recursive linearSearch***************");
 		index = Search.recursiveLinearSearch(lsArray, 5, 78);
 		System.out.println(index);
 		index = Search.recursiveLinearSearch(lsArray, 5, 122);
+		System.out.println(index);
+		
+		
+		// Recursive Binary Search Test
+		System.out.println("**************Test recursive binarySearch***************");
+		index = Search.recursiveBinarySearch(bsArray, 0, bsArray.length, 4);
+		System.out.println(index);
+		index = Search.recursiveBinarySearch(bsArray, 0, bsArray.length, 60);
+		System.out.println(index);
+		index = Search.recursiveBinarySearch(bsArray, 0, bsArray.length, 99);
 		System.out.println(index);
 	}
 	
