@@ -3,11 +3,17 @@ package algo.sort;
 public class App {
 	public static void main(String[] args) {
 		
-		// Test selectionSort
-		System.out.println("**********Test selectionSort***********");
+		// Test selectionSort (int)
+		System.out.println("**********Test selectionSort (int)***********");
 		int[] selectionArray = {5,2,8,7,4,9,14,23,65,1};
 		Sort.selectionSort(selectionArray);
 		display(selectionArray);
+		
+		// Test selectionSort (String)
+		System.out.println("**********Test selectionSort (String)***********");
+		String[] selectionArrayString = {"hello", "Whatsup", "abba", "cadabra", "Cadabra", "altitude"};
+		Sort.selectionSort(selectionArrayString);
+		display(selectionArrayString);
 		
 		// Test insertionSort
 		System.out.println("**********Test insertionSort***********");
@@ -19,6 +25,13 @@ public class App {
 	
 	public static void display(int[] array) {
 		for(int element : array) {
+			System.out.print(element + " ");
+		}
+		System.out.println();
+	}
+	
+	public static void display(String[] array) {
+		for(String element : array) {
 			System.out.print(element + " ");
 		}
 		System.out.println();
