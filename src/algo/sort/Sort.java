@@ -44,4 +44,17 @@ public class Sort {
 			}
 			return array;
 		}
+		
+		public static String[] insertionSort(String[] array) {
+			for(int i = 1; i < array.length; i++) {
+				String element = array[i];
+				int j = i - 1;
+				while(j >= 0 && array[j].compareToIgnoreCase(element) > 0) {
+					array[j + 1] = array[j];
+					j--;
+				}
+				array[j + 1] = element;
+			}
+			return array;
+		}
 }

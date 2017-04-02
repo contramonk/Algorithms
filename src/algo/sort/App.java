@@ -15,12 +15,17 @@ public class App {
 		Sort.selectionSort(selectionArrayString);
 		display(selectionArrayString);
 		
-		// Test insertionSort
-		System.out.println("**********Test insertionSort***********");
+		// Test insertionSort (int)
+		System.out.println("**********Test insertionSort (int)***********");
 		int[] insertionArray = {6,4,3,8,9,10,2,3,15,1};
 		Sort.insertionSort(insertionArray);
 		display(insertionArray);
 		
+		// Test insertionSort (String)
+		System.out.println("**********Test insertionSort (String)***********");
+		String[] insertionArrayString = {"zeta", "gamma", "alpha", "Alpha", "cappa"};
+		Sort.insertionSort(insertionArrayString);
+		display(insertionArrayString);
 	}
 	
 	public static void display(int[] array) {
