@@ -1,7 +1,14 @@
 package algo.sort;
 
 public class Sort {
-
+	
+	/**
+	 * This method uses the selectionSort algorithm
+	 * to sort a given integer array.
+	 * 
+	 * @param array  an integer array
+	 * @return 		 the sorted array
+	 */
 		public static int[] selectionSort(int[] array) {
 			for(int i = 0; i < array.length; i++) {
 				int minimum = i;
@@ -17,6 +24,13 @@ public class Sort {
 			return array;
 		}
 		
+		/**
+		 * This method uses the selectionSort algorithm to
+		 * sort a given String array.
+		 * 
+		 * @param array a string array
+		 * @return		the sorted array
+		 */
 		public static String[] selectionSort(String[] array) {
 			for(int i = 0; i < array.length; i++) {
 				int min = i;
@@ -32,6 +46,12 @@ public class Sort {
 			return array;
 		}
 		
+		/**
+		 * This method uses the insertionSort algorithm
+		 * to sort a given integer array.
+		 * @param array an integer array
+		 * @return		the sorted array
+		 */
 		public static int[] insertionSort(int[] array) {
 			for(int i = 1; i < array.length; i++) {
 				int element = array[i];
@@ -45,6 +65,12 @@ public class Sort {
 			return array;
 		}
 		
+		/**
+		 * This method uses the insertionSort algorithm to
+		 * sort a given String array.
+		 * @param array a String array
+		 * @return		the sorted array
+		 */
 		public static String[] insertionSort(String[] array) {
 			for(int i = 1; i < array.length; i++) {
 				String element = array[i];
