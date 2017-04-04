@@ -26,6 +26,12 @@ public class App {
 		String[] insertionArrayString = {"zeta", "gamma", "alpha", "Alpha", "cappa"};
 		Sort.insertionSort(insertionArrayString);
 		display(insertionArrayString);
+		
+		// Test mergeSort
+		System.out.println("**********Test mergeSort***********");
+		int[] mergeSortArray = {4,9,1,2,0,7,5,3,5,7,9,1,4,5,3,8,9,12,4,9};
+		Sort.mergeSort(mergeSortArray, 3, mergeSortArray.length - 1);
+		display(mergeSortArray);
 	}
 	
 	public static void display(int[] array) {
